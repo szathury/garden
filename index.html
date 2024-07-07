@@ -23,10 +23,10 @@
             <h1><a href="index.html">Gardening Engineer Co.</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active" data-lang="en" style="display:none">Home</a></li>
-                    <li><a href="#home" class="active" data-lang="hu">Főoldal</a></li>
+                    <li><a href="#home" data-lang="en" style="display:none">Home</a></li>
+                    <li><a href="#home" data-lang="hu">Főoldal</a></li>
                     <li><a href="#services" data-lang="en" style="display:none">Services</a></li>
-                    <li><a href="#services" data-lang="hu">szolgáltatások</a></li>
+                    <li><a href="#services" data-lang="hu">Szolgáltatásaink</a></li>
                     <li><a href="#about" data-lang="en" style="display:none">About</a></li>
                     <li><a href="#about" data-lang="hu">Rólunk</a></li>
                     <li><a href="#contact" data-lang="en" style="display:none">Contact</a></li>
@@ -34,8 +34,8 @@
                 </ul>
             </nav>
             <div class="language-buttons">
-                <button onclick="switchLanguage('en')" type="language">EN</button>
                 <button onclick="switchLanguage('hu')" type="language">HU</button>
+                <button onclick="switchLanguage('en')" type="language">EN</button>
             </div>
         </div>
     </header>
@@ -57,25 +57,31 @@
             <h2 data-lang="hu">Szolgáltatásaink</h2>
             <div class="service-grid">
                 <div class="service">
-                    <i class="fas fa-seedling"></i>
-                    <h3 data-lang="en" style="display:none">Garden Design</h3>
-                    <h3 data-lang="hu">Kerttervezés</h3>
-                    <p data-lang="en" style="display:none">Beautiful garden designs tailored to your needs.</p>
-                    <p data-lang="hu">Szép kerttervezés az Ön igényei szerint.</p>
+                    <button type="servbtn">
+                        <i class="fas fa-seedling"></i>
+                        <h3 data-lang="en" style="display:none">Garden Design</h3>
+                        <h3 data-lang="hu">Kerttervezés</h3>
+                        <p data-lang="en" style="display:none">Beautiful garden designs tailored to your needs.</p>
+                        <p data-lang="hu">Szép kerttervezés az Ön igényei szerint.</p>
+                    </button>
                 </div>
                 <div class="service">
-                    <i class="fas fa-leaf"></i>
-                    <h3 data-lang="en" style="display:none">Landscaping</h3>
-                    <h3 data-lang="hu">Tájrendezés</h3>
-                    <p data-lang="en" style="display:none">Expert landscaping services for your home or business.</p>
-                    <p data-lang="hu">Szakértő tájrendezési szolgáltatások otthonába vagy vállalkozásába.</p>
+                    <button type="servbtn">
+                        <i class="fas fa-leaf"></i>
+                        <h3 data-lang="en" style="display:none">Landscaping</h3>
+                        <h3 data-lang="hu">Tájrendezés</h3>
+                        <p data-lang="en" style="display:none">Expert landscaping services for your home or business.</p>
+                        <p data-lang="hu">Szakértő tájrendezési szolgáltatások otthonába vagy vállalkozásába.</p>
+                    </button>
                 </div>
                 <div class="service">
-                    <i class="fas fa-tools"></i>
-                    <h3 data-lang="en" style="display:none">Maintenance</h3>
-                    <h3 data-lang="hu">Karbantartás</h3>
-                    <p data-lang="en" style="display:none">Keep your garden in top shape with our maintenance services.</p>
-                    <p data-lang="hu">Tartsa kertjét tökéletes állapotban karbantartási szolgáltatásainkkal.</p>
+                    <button type="servbtn">
+                        <i class="fas fa-tools"></i>
+                        <h3 data-lang="en" style="display:none">Maintenance</h3>
+                        <h3 data-lang="hu">Karbantartás</h3>
+                        <p data-lang="en" style="display:none">Keep your garden in top shape with our maintenance services.</p>
+                        <p data-lang="hu">Tartsa kertjét tökéletes állapotban karbantartási szolgáltatásainkkal.</p>
+                    </button>
                 </div>
             </div>
         </div>

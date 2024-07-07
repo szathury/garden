@@ -44,6 +44,12 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
 }
 
 /* Hero section */
@@ -54,7 +60,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     background: url('../images/hero.jpg') no-repeat center center/cover fixed;
-    color: #fff;
+    color: #000;
     text-align: center;
     overflow: hidden; /* Ensure content does not overflow */
 }
@@ -209,20 +215,37 @@ button[type="language"] {
 
 button[type="language"]:hover {
     background: #218c53;
+    transform: scale(1.1);
 }
 
-button[type="more"] {
-    background: #27ae60;
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero button[type="more"] {
+    background: #0cac4e;
     color: #fff;
-    padding: 1rem 1.8rem;
-    border: none;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
     border-radius: 5px;
+    border: none; /* Add this to remove the default button border */
     cursor: pointer;
-    transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    margin-top: 1rem; /* Optional: add some margin to separate it from the text */
 }
 
-button[type="more"]:hover {
+.hero button[type="more"]:hover {
     background: #218c53;
+    transform: scale(1.1);
+}
+
+.services .container .service button[type="servbtn"]{
+    background-color: transparent;
+    margin: none;
+    border: none; /* Add this to remove the default button border */
+    cursor: pointer;
 }
 
 /* Footer */
